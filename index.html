@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التصحيح النموذجي: العلوم الإسلامية | منصة نوفل</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --main-color: #1e3a8a;
+            --secondary-color: #2563eb;
+            --accent-color: #16a34a;
+            --warning-color: #d97706;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #e2e8f0;
+            margin: 0;
+            padding: 20px;
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-radius: 12px;
+            border-top: 8px solid var(--main-color);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px dashed var(--main-color);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            font-family: 'Cairo', sans-serif;
+            color: var(--main-color);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            background: var(--bg-color);
+            padding: 10px 20px;
+            border-radius: 8px;
+            border-right: 6px solid var(--secondary-color);
+            margin: 30px 0 20px 0;
+            justify-content: space-between;
+        }
+
+        .section-title h2 {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            color: var(--main-color);
+            font-size: 1.5rem;
+        }
+
+        .part-points {
+            background: var(--main-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .answer-box {
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background: #ffffff;
+        }
+
+        .question-title {
+            font-weight: bold;
+            color: #0f172a;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .answer-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .answer-list > li {
+            margin-bottom: 15px;
+        }
+        
+        .answer-list > li > div {
+            margin-bottom: 5px;
+        }
+
+        .sub-bullets {
+            list-style-type: disc;
+            margin-right: 25px;
+            margin-top: 5px;
+            color: #334155;
+        }
+
+        .sub-bullets li {
+            margin-bottom: 5px;
+        }
+
+        .mark {
+            display: inline-block;
+            background: #dcfce7;
+            color: #166534;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            border: 1px solid #bbf7d0;
+            margin-right: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+        }
+
+        th {
+            background-color: var(--bg-color);
+            color: var(--main-color);
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .methodology-box {
+            background: #fffbeb;
+            border: 2px solid #fde68a;
+            border-right: 6px solid var(--warning-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .methodology-box h3 {
+            color: var(--warning-color);
+            margin-top: 0;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .methodology-box ul {
+            padding-right: 20px;
+            margin-bottom: 0;
+        }
+
+        .methodology-box li {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .btn-print {
+            display: block;
+            width: 250px;
+            margin: 40px auto 0;
+            padding: 15px;
+            background: var(--main-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-family: 'Cairo', sans-serif;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(30, 58, 138, 0.2);
+            transition: 0.3s;
+        }
+
+        .btn-print:hover { background: #1e3a8a; }
+
+        @media print {
+            .btn-print { display: none; }
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            .methodology-box { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>التصحيح النموذجي: العلوم الإسلامية</h1>
+        <p style="font-size: 1.1rem; color: #64748b;">منصة نوفل - تحضير بكالوريا 2026</p>
+    </header>
+
+    <div class="section-title">
+        <h2>الجزء الأول</h2>
+        <span class="part-points">12 نقطة</span>
+    </div>
+
+    <div class="answer-box">
+        <div class="question-title">1. العقل في القرآن الكريم (04 ن)</div>
+        <ul class="answer-list">
+            <li>
+                <div><strong>أهمية العقل:</strong> <span class="mark">02 ن</span></div>
+                <ul class="sub-bullets">
+                    <li>مناط التكليف (به يحاسب الإنسان ويُكلف شرعاً).</li>
+                    <li>أداة للفهم والاستنباط وتدبر آيات الله في الكون.</li>
+                    <li>وسيلة لتمحيص الأفكار والموروثات ورفض التقليد الأعمى.</li>
+                </ul>
+            </li>
+            <li>
+                <div><strong>حفظ العقل من جانب العدم:</strong> <span class="mark">02 ن</span></div>
+                <div>من خلال تحريم كل ما يعطله أو يتلفه كالخمر والمخدرات، ويظهر ذلك في الآية في قوله تعالى: ﴿فَاجْتَنِبُوهُ﴾.</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="answer-box">
+        <div class="question-title">2. الجريمة والعقوبة (05 ن)</div>
+        <ul class="answer-list">
+            <li>
+                <div><strong>تعريف الجريمة اصطلاحاً:</strong> محظورات شرعية زجر الله عنها بحد أو قصاص أو تعزير. <span class="mark">01 ن</span></div>
+            </li>
+            <li>
+                <div><strong>عقوبة شارب الخمر ومقصدها:</strong> <span class="mark">02 ن</span></div>
+                <ul class="sub-bullets">
+                    <li>نوع العقوبة: <strong>الحد</strong>.</li>
+                    <li>المقصد الشرعي: <strong>حفظ العقل</strong> (وهو مقصد ضروري).</li>
+                </ul>
+            </li>
+            <li>
+                <div><strong>الفرق بين الحد والتعزير:</strong> <span class="mark">02 ن</span></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>أوجه الاختلاف</th>
+                            <th>الحد</th>
+                            <th>التعزير</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>التقدير الشرعي</strong></td>
+                            <td>عقوبة مقدرة (محددة) شرعاً.</td>
+                            <td>عقوبة غير مقدرة شرعاً (يجتهد فيها القاضي).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>العفو والشفاعة</strong></td>
+                            <td>لا يجوز فيها العفو إذا بلغت الحاكم.</td>
+                            <td>يجوز فيها العفو إذا اقتضت المصلحة ذلك.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </div>
+
+    <div class="answer-box">
+        <div class="question-title">3. الاستخراج من الآيات الكريمة (03 ن)</div>
+        <ul class="answer-list">
+            <li>
+                <div><strong>الحكم الشرعي:</strong> <u>تحريم</u> شرب الخمر والميسر. <span class="mark">1.5 ن</span></div>
+            </li>
+            <li>
+                <div><strong>الفائدة:</strong> <u>بيان</u> عداوة الشيطان للإنسان وسعيه لإيقاع البغضاء والعداوة بين المسلمين. <span class="mark">1.5 ن</span></div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section-title">
+        <h2>الجزء الثاني</h2>
+        <span class="part-points">08 نقاط</span>
+    </div>
+
+    <div class="answer-box">
+        <div class="question-title">1. الرسالات السماوية (04 ن)</div>
+        <ul class="answer-list">
+            <li>
+                <div><strong>علاقة رسالة الإسلام بالرسالات السابقة:</strong> <span class="mark">02 ن</span></div>
+                <ul class="sub-bullets">
+                    <li><strong>خاتمة:</strong> الرسالة المحمدية خاتمة لجميع الرسالات السماوية السابقة.</li>
+                    <li><strong>مصدقة:</strong> مصدقة لبعض الأحكام والمبادئ وأصول العقيدة (التوحيد) في الرسالات السابقة.</li>
+                    <li><strong>ناسخة:</strong> لبعض الأحكام الشرعية والفروع التي كانت مؤقتة لأقوام معينين.</li>
+                    <li><strong>مصححة:</strong> لما طرأ على الرسالات السابقة من تحريف وتغيير بشري.</li>
+                </ul>
+            </li>
+            <li>
+                <div><strong>من الانحرافات العقدية في المسيحية:</strong> <span class="mark">02 ن</span></div>
+                <ul class="sub-bullets">
+                    <li>عقيدة التثليث (القول بأن الله مكون من: الأب، الابن، الروح القدس).</li>
+                    <li>عقيدة الفداء والخلاص (الاعتقاد بأن عيسى صُلب ليكفر خطيئة البشر).</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="answer-box">
+        <div class="question-title">2. الميراث (04 ن)</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>الوارث</th>
+                    <th>النصيب</th>
+                    <th>نوع الميراث</th>
+                    <th>التعليل الشرعي</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>الزوجة</strong></td>
+                    <td>الثمن (1/8)</td>
+                    <td>بالفرض</td>
+                    <td>لوجود الفرع الوارث (وهو البنت).</td>
+                </tr>
+                <tr>
+                    <td><strong>البنت</strong></td>
+                    <td>النصف (1/2)</td>
+                    <td>بالفرض</td>
+                    <td>لأنها واحدة (منفردة) وعدم وجود المعصب (الابن).</td>
+                </tr>
+                <tr>
+                    <td><strong>الأخ الشقيق</strong></td>
+                    <td>الباقي</td>
+                    <td>بالتعصيب</td>
+                    <td>لأنه أولى رجل ذكر (عصبة بالنفس).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="methodology-box">
+        <h3>💡 إرشادات منهجية هامة (للحصول على العلامة الكاملة):</h3>
+        <ul>
+            <li><strong>في أسئلة الفروقات:</strong> يُلزمكم دائماً كتابة الإجابة في <u>جدول منظم</u> يوضح أوجه الاختلاف بوضوح. احرصوا على كتابة (ما بين فرقين إلى ثلاثة فروق) كحد أدنى لضمان النقطة الكاملة.</li>
+            <li><strong>في سؤال استخراج الأحكام:</strong> يجب أن تبدأ الإجابة بكلمات مفتاحية دالة على الحكم التكليفي مثل: <em>(وجوب، تحريم، استحباب، كراهة، إباحة/جواز)</em>.</li>
+            <li><strong>في سؤال استخراج الفوائد:</strong> يجب أن تبدأ الإجابة بكلمات مفتاحية دالة مثل: <em>(بيان، الحث على، الدعوة إلى، التحذير من، التأكيد على...)</em>.</li>
+        </ul>
+    </div>
+
+    <button class="btn-print" onclick="window.print()">🖨️ طباعة التصحيح</button>
+</div>
+
+</body>
+</html>
